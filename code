@@ -1,0 +1,19 @@
+# main.py
+import random
+def flipCoin():
+  if random.randint(0,1)==0:
+    return 'heads'
+  else:
+    return 'tails'
+heads=0 
+tails=0
+for i in range(1000):
+  ht=flipCoin()
+  if ht=='heads':
+    heads+=1
+  else:
+    tails+=1
+print(str((heads/1000)*100)+"% of your flips were heads")
+print(str((tails/1000)*100)+"% of your flips were tails")    
+  
+  
